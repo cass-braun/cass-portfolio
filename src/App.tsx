@@ -1,12 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import NavBar from './components/NavBar';
-import {
-  ProjectsPage,
-} from './pages/Pages';
 import HomePage from './pages/HomePage';
 import ExperiencePage from './pages/ExperiencePage';
 import EducationPage from './pages/EducationPage';
 import TechnicalSkillsPage from './pages/TechnicalSkillsPage';
+import ProjectsPage from './pages/ProjectsPage';
 
 export default function App() {
   return (
