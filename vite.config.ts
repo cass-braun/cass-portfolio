@@ -7,5 +7,5 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  base: '/cass-portfolio/', // match your repo name
+  base: '/', // match your repo name
 })
