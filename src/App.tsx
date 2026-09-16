@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import HomePage from './pages/HomePage';
 import ExperiencePage from './pages/ExperiencePage';
@@ -8,10 +8,10 @@ import ProjectsPage from './pages/ProjectsPage';
 
 export default function App() {
   return (
-    <Router>
-      <div className="min-h-screen w-full  text-slate-800 font-sans flex flex-col">
+    <Router basename='/cass-portfolio'>
+      <div className="min-h-screen w-full text-slate-800 font-sans flex flex-col">
         {/* Basic Header wrapping the NavBar component */}
-        <header className="border-b border-gray-300  backdrop-blur sticky top-0 z-50">
+        <header className="border-b border-gray-300 backdrop-blur sticky top-0 z-50">
           <NavBar />
         </header>
 
@@ -23,6 +23,8 @@ export default function App() {
             <Route path="/technical-skills" element={<TechnicalSkillsPage />} />
             <Route path="/experience" element={<ExperiencePage />} />
             <Route path="/projects" element={<ProjectsPage />} />
+            {/* Fallback route to redirect any unmatched/trailing URL back to Home */}
+            <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </main>
       </div>
