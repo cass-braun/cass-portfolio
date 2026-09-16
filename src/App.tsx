@@ -3,10 +3,10 @@ import NavBar from './components/NavBar';
 import {
   EducationPage,
   TechnicalSkillsPage,
-  ExperiencePage,
   ProjectsPage,
 } from './pages/Pages';
 import HomePage from './pages/HomePage';
+import ExperiencePage from './pages/ExperiencePage';
 
 export default function App() {
   return (
