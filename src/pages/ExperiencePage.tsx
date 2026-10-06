@@ -11,7 +11,7 @@ const experiences: ExperienceItem[] = [
   {
     role: 'Software Engineer Co-op',
     organization: 'Mesomat',
-    period: 'May 2024 – Aug 2024',
+    period: 'June 2025 – Aug 2026',
     tags: ['React', 'TypeScript', 'FastAPI', 'Python', 'Full-Stack'],
     points: [
       'Managed full-stack web development, building scalable front-end interfaces and backend APIs.',
